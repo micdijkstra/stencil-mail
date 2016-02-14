@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mixins &ndash; Stencil Mail</title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="styles/hgt-syntax.css">
+    <link rel="stylesheet" href="styles/hgt.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="dist/stencil.css">
+      
+    
+</head>
+
+  <body class="hgt-body">
+    <div class="hgt-pagehead">
+      <div class="hgt-container">
+        <nav class="hgt-pagehead-nav" role="navigation">
+          <a href="index.html"
+             class="hgt-pagehead-nav-item ">
+            Home
+          </a>
+
+          
+          <a href="layout.html"
+             class="hgt-pagehead-nav-item ">
+            Layout
+          </a>
+          
+          <a href="mixins.html"
+             class="hgt-pagehead-nav-item selected">
+            Mixins
+          </a>
+          
+          <a href="type.html"
+             class="hgt-pagehead-nav-item ">
+            Type
+          </a>
+          
+          <a href="utilities.html"
+             class="hgt-pagehead-nav-item ">
+            Utilities
+          </a>
+          
+          <a href="variables.html"
+             class="hgt-pagehead-nav-item ">
+            Variables
+          </a>
+          
+          <a href="index.html"
+             class="hgt-pagehead-nav-item ">
+            
+          </a>
+          
+        </nav>
+
+        <h1 class="hgt-pagehead-title">Stencil Mail</h1>
+      </div>
+    </div>
+
+    <div class="hgt-styleguide hgt-container">
+      <div class="hgt-columns">
+        
+          <div class="hgt-column one-fourth">
+            <nav class="hgt-menu">
+              
+                
+                  <a href="#0-mixins-overview" class="hgt-menu-item">Overview</a>
+                
+              
+                
+                  <a href="#1-media-queries" class="hgt-menu-item">Media Queries</a>
+                
+              
+                
+                  <a href="#background-image" class="hgt-menu-item">Background Image</a>
+                
+              
+                
+                  <a href="#hyphenate" class="hgt-menu-item">Hyphenate</a>
+                
+              
+                
+                  <a href="#link" class="hgt-menu-item">Link</a>
+                
+              
+            </nav>
+          </div>
+        
+
+        <div class="hgt-column three-fourths">
+          <div class="hgt-content">
+<h1 id="0-mixins-overview" class="styleguide">Overview</h1>
+<p class="styleguide">Mixins should be used when the output of the included CSS changes or you need to repeat the same group of declarations.</p>
+<h1 id="1-media-queries" class="styleguide">Media Queries</h1>
+<p class="styleguide"><strong>Width</strong></p><p class="styleguide">You should implement a mobile first approach so you use <code class="styleguide">from</code> over <code class="styleguide">to</code>.</p><ul class="styleguide"><li><code class="styleguide">@from($device-width)</code></li>
+<li><code class="styleguide">@to($device-width)</code></li>
+</ul><p class="styleguide">The following shorthand mixins have been created for your convenience.</p><table class="styleguide"> <tr>
+<th>Mixin</th>
+<th>Description</th>
+</tr>
+ <tr>
+<td><code class="styleguide">@include mobile {}</code></td>
+<td>To mobile screen size</td>
+</tr>
+<tr>
+<td><code class="styleguide">@include lap{}</code></td>
+<td>From lap screen size</td>
+</tr>
+<tr>
+<td><code class="styleguide">@include desk {}</code></td>
+<td>From desk screen size</td>
+</tr>
+ </table><p class="styleguide">The value for these break-points is set in [variables][screen-sizes].</p>
+<h1 id="background-image" class="styleguide">Background Image</h1>
+<p class="styleguide">Cover background image.</p><p class="styleguide"><code class="styleguide">@include background-image(&#39;image.png&#39;)</code></p>
+<h1 id="hyphenate" class="styleguide">Hyphenate</h1>
+<p class="styleguide">Hyphenate text.</p><p class="styleguide"><code class="styleguide">@include hyphenate</code></p>
+<h1 id="link" class="styleguide">Link</h1>
+<p class="styleguide">Set color for link in all states.</p><p class="styleguide"><code class="styleguide">@include a(black)</code></p>        </div>
+      </div>
+    </div>
+
+    <footer class="hgt-footer">
+      Built using <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/wearecube/hologram-github-theme">Hologram Github Theme</a>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="scripts/vendor/jquery.waypoints.min.js"></script>
+  <script src="scripts/vendor/sticky.min.js"></script>
+  <script src="scripts/vendor/infinite.min.js"></script>
+  <script src="scripts/hgt.js"></script>
+
+  
+
+  
+</body>
+</html>
