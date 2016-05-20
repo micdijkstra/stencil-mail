@@ -2,7 +2,7 @@
 
 A selection of custom mixins and utilities to help you get started building a new email fast.
 
-[View full documentation](http://dijkstra.io/stencil-mail/docs)
+[View full documentation](http://micdijkstra.github.io/stencil-mail/docs)
 
 ## Getting Started
 
